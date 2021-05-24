@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+
+.nav-style {
+  width: 100vw;
+  height: 6vh;
+  min-height: 25px;
+
+  display: flex;
+  background-color: blueviolet;
+
+  justify-content: center;
+  align-items: center;
+  padding: 1vh;
+}
+
+/* NAV LINKS INCLUDInG LI AND A */
+
+.nav-links {
+  width: 90%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-links li {
+  list-style: none;
+  font-size: 2.5vh;
+}
+
+a {
+  text-decoration: none;
+  color: cornsilk;
+}
+
+/* HAMBURGER LOGO */
+
+.logo {
+  height: 4vh;
+  min-height: 20px;
+  width: auto;
+}
+
+.logo-space {
+  width: 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HAMBURGER ICON */
+
+.icon-style {
+  display: none;
+}
+
+#icon {
+  height: 4vh;
+  min-height: 18px;
+
+  cursor: pointer;
+}
+
+/* ON HOVER */
+li a:hover {
+  text-shadow: 1px 1px 3px white;
+}
+
+/* MEDIA QUERIES FOR SIZE UNDER 600px */
+
+@media screen and (max-width: 600px) {
+  .logo-space {
+    width: 50%;
+
+    display: block;
+    position: absolute;
+
+    top: 2vh;
+    left: 4vw;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .icon-style {
+    width: 50%;
+
+    display: block;
+    float: right;
+    position: absolute;
+
+    left: 90vw;
+    top: 2vh;
+  }
+}
+
+/* .RESPONSIVE CLASS CREATED USING JAVASCRIPT */
+
+@media screen and (max-width: 600px) {
+  .nav-links.responsive {
+    height: 185px;
+    width: 150px;
+
+    position: fixed;
+    display: block;
+
+    border-radius: 0px 10px;
+    margin: 0;
+
+    left: 75vw;
+    top: 7vh;
+
+    background-color: blueviolet;
+  }
+
+  .nav-links.responsive .logo-space {
+    position: absolute;
+
+    right: 0vw;
+    top: 0;
+  }
+
+  .nav-links.responsive li {
+    position: relative;
+    float: none;
+    display: flex;
+    text-align: left;
+    padding: 2vw;
+    font-size: 3.5vw;
+  }
+}
